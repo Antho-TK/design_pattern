@@ -1,22 +1,11 @@
-
-const Element = require('./Element');
-
-class Marque extends Element {
-    constructor(name, description) {
-        super(name);
-        this.description = description;
+class Marque {
+    constructor(nom) {
+        this.nom = nom;
     }
 
-    getDescription() {
-        return this.description;
-    }
-
-    setDescription(description) {
-        this.description = description;
-    }
-
-    getAllInfo() {
-        return `Marque: ${this.name}, Description: ${this.description}`;
+    getNom() {
+        return this.nom;
     }
 }
+
 module.exports = Marque;

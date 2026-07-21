@@ -1,18 +1,16 @@
-const Element = require('./Element');
-
-class Ingredient extends Element {
-
-    constructor(name, value, unit, quantity) {
-        super(name, value, unit);
-        this.quantity = quantity;
+class Ingredient {
+    constructor(nom, qteMilligrammes) {
+        this.nom = nom;
+        this.qteMilligrammes = qteMilligrammes;
     }
 
-    getQuantity() {
-        return this.quantity;
+    getNom() {
+        return this.nom;
     }
 
-    getAllInfo() {
-        return `${this.getInfo()}, Quantité : ${this.quantity}`;
+    getQteMilligrammes() {
+        return this.qteMilligrammes;
     }
 }
+
 module.exports = Ingredient;

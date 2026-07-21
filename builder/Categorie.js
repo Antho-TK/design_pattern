@@ -1,23 +1,11 @@
-
-const Element = require('./Element');
-
-class Categorie extends Element {
-    constructor(name, description) {
-        super(name);
-        this.description = description;
+class Categorie {
+    constructor(nom) {
+        this.nom = nom;
     }
 
-    getDescription() {
-        return this.description;
+    getNom() {
+        return this.nom;
     }
-
-    setDescription(description) {
-        this.description = description;
-    }
-
-    getAllInfo() {
-        return `Catégorie: ${this.name}, Description: ${this.description}`;
-    }
-
 }
+
 module.exports = Categorie;
